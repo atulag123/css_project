@@ -344,5 +344,182 @@ body{
 
 
 /* ################################### Testimmonial styling ###########################3 000 */
+#testimonial{
+    background: rgb(243, 243, 243);
+    padding: 5rem 0rem;
+}
+
+.testimonial-title{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+    color: #555;
+}
+
+.customer-detail img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
+}
+
+.testimonial-container{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.6rem;
+    padding: 1rem;
+    
+}
+
+.testimonial-container .checked{
+    color: #ff9529;
+}
+
+.testimonial-box .testimonial-text{
+    margin: 1rem 0;
+    color: #444;
+}
+
+.testimonial-box{
+    text-align: center;
+    padding: 1rem;
+}
 
 
+/* ###################### contact styling ####################### 0 */
+
+#contact{
+    padding: 5rem 0;
+    background: rgb(226, 226, 226);
+}
+
+.contact-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    background: #fff;
+    
+}
+
+.contact-img{
+    width: 50%;
+}
+
+/* .form-container{
+    width: 50%;
+} */
+
+.contact-image img{
+    display: block;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.form-container{
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+}
+
+.form-container input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 1rem 0;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 500;
+}
+
+.form-container textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 1rem 0;
+    
+}
+
+.form-container h2{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.form-container a{
+    font-size: 1.2rem;
+}
+
+
+/* ##################### footer styling ###################  */
+
+#footer h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+    font-weight: 500;
+    color: #fff;
+    background: rgb(65, 65, 65);
+}
+
+
+
+/* ################################ media queries ############################ */
+
+@media (max-width: 768px){
+    .navbar{
+        opacity: 0.95;
+    }
+    .navbar-container input[type='checkbox'],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type='checkbox']{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 40px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+    }
+
+    .navbar-conatiner .hamburger-lines{
+        display: block;
+        height: 32px;
+        width: 40px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-conatiner .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333333;
+    }
+
+    
+
+}
